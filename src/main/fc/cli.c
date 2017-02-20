@@ -560,6 +560,7 @@ const clivalue_t valueTable[] = {
 #ifdef BEEPER
     { "beeper_inversion",           VAR_UINT8  | MASTER_VALUE | MODE_LOOKUP,  &beeperConfig()->isInverted, .config.lookup = { TABLE_OFF_ON } },
     { "beeper_od",                  VAR_UINT8  | MASTER_VALUE | MODE_LOOKUP,  &beeperConfig()->isOpenDrain, .config.lookup = { TABLE_OFF_ON } },
+    { "beeper_ac",                  VAR_UINT8  | MASTER_VALUE | MODE_LOOKUP,  &beeperConfig()->isAC, .config.lookup = { TABLE_OFF_ON } },
 #endif
 
 #ifdef SERIAL_RX

@@ -354,6 +354,8 @@ void resetBeeperConfig(beeperConfig_t *beeperConfig)
 #endif
 #ifndef BRAINRE1
     beeperConfig->ioTag = IO_TAG(BEEPER);
+#else
+    beeperConfig->isAC = false;
 #endif
 }
 #endif

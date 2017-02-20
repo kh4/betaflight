@@ -352,6 +352,7 @@ void init(void)
 
 #ifdef USE_RE1_FPGA
     RE1FPGA_Init(false);
+    beeperInit(beeperConfig());
 #endif
 
 #ifdef USE_HARDWARE_REVISION_DETECTION

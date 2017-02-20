@@ -76,7 +76,7 @@ void beeperInit(const beeperConfig_t *config)
         IOConfigGPIO(beeperIO, config->isOpenDrain ? IOCFG_OUT_OD : IOCFG_OUT_PP);
     }
 #else
-    UNUSED(config);
+    RE1FPGA_SetBuzzerType(config->isAC ? RE1FPGA_BUZZER_AC : RE1FPGA_BUZZER_DC);
 #endif
     systemBeep(false);
 #endif
